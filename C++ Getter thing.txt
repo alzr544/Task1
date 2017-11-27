@@ -1,0 +1,112 @@
+#include <iostream>
+
+#include <string>
+
+
+class Bankcustomer
+
+{
+
+  private:
+
+    std::string name;
+
+    int id;
+
+    std::string address;
+
+    int phone;
+
+    int balance;
+
+    std::string accounttype;
+
+    
+  public:
+
+    int getId()
+
+    {
+
+      return id;
+
+    }
+
+    void setId(int i)
+
+    {
+ 
+     id=i;
+
+    }
+
+    std::string getName ()
+
+    {
+
+      return name;
+
+    }
+
+    void setName(std::string i)
+
+    {
+
+      name=i;
+
+    }
+
+     std::string getAddress ()
+
+    {
+
+      return address;
+
+    }
+
+    void setAdress(std::string i)
+
+    {
+
+      address=i;
+
+    }
+
+    int getPhone()
+
+    {
+
+      return phone;
+
+    }
+
+    void setPhone(int i)
+
+    {
+
+      phone=i;
+
+    }
+
+    
+};
+
+
+int main()
+
+{
+
+  Bankcustomer A;
+
+  A.setId(1);
+
+  std::cout<<A.getId()<<"\n";
+
+  A.setName("Hi");
+
+  std::cout<<A.getName()<<"\n";
+
+  A.setAdress("Home");
+
+  std::cout<<A.getAddress()<<"\n";
+};
